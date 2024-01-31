@@ -2,8 +2,13 @@
     display: grid;
     border: 1px solid black;
     grid-template: repeat(5, 50px) / repeat(5, 50px);
-    gap: 10px 20px;
-    /* gap: filas columnas; */
+    gap: 20px;
+    grid-template-areas:
+    "header header header header nav"
+    "article main main main nav"
+    "article main main main nav"
+    "article main main main nav"
+    "footer footer footer footer nav";
 }
   
 .item {
