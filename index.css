@@ -1,8 +1,7 @@
 .container {
     display: grid;
     border: 1px solid black;
-    grid-template-columns: 200px fit-content(200px) 200px;
-    /*La función fit-content en CSS se utiliza para especificar el tamaño máximo para un elemento flexible, como un contenedor de cuadrícula o un elemento en un diseño de cuadrícula. fit-content permite que el elemento se ajuste a su contenido, pero con un límite máximo especificado.(No me funciono por lo cual no lo recomiendo al dia de hoy, en el ejemplo se puede ver como no se limita la columna)*/
+    grid-template-columns: 200px 200px 200px;
     gap: 5px;
 }
   
@@ -10,4 +9,9 @@
     max-width: 100%;
     height: 100px;
     background-color: lightblue;
+}
+
+.item1 {
+    grid-column-start: 2;
+    grid-column-end: 3;
 }
