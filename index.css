@@ -3,9 +3,8 @@
     border: 1px solid black;
     grid-template: repeat(5, 50px) / repeat(5, 50px);
     gap: 20px;
-    justify-items: center; /* inline axis (alineacion eje horizontal) */
-    align-items: center; /* block axis (alineacion eje vertical) */
-    /*justify-items/align-items alinea  lo que esta por dentro de la grid y tiene valores como start, center, end, stretch*/
+    place-items: center center;
+    /*place-items: align-items / justify-items y tiene valores como start, center, end, stretch. Sirve para colocar ambos valores en una sola linea*/
 }
   
 .item {
