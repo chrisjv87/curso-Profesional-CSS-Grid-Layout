@@ -2,38 +2,42 @@
     display: grid;
     border: 1px solid black;
     grid-template-columns: repeat(3, 200px);
+    grid-template-rows: 200px;
     gap: 5px;
-    grid-template-areas:
-    "seis cinco cuatro"
-    "uno dos tres";
 }
   
 .item {
-    max-width: 100%;
-    height: 100px;
+    width: 50px;
+    height: 50px;
     background-color: lightblue;
+    font-size: 40px;
 }
 
 .item1 {
-    grid-area: uno;
+    grid-column: 3 / 4;
+    grid-row: 1 / 1;
+    /* align-self: center; */
+    /* justify-self: center; */
+
+    place-self: center center;
 }
 
 .item2 {
-    grid-area: dos;
+    grid-column: 1 / 2;
+    grid-row: 1 / 1;
+    /* align-self: end; */
+    /* justify-self: start; */
+
+    place-self: end start;
 }
 
 .item3 {
-    grid-area: tres;
+    grid-column: 2 / 3;
+    grid-row: 1 / 1;
+    /* align-self: end; */
+    /* justify-self: end; */
+
+    place-self: end end;
 }
 
-.item4 {
-    grid-area: cuatro;
-}
-
-.item5 {
-    grid-area: cinco;
-}
-
-.item6 {
-    grid-area: seis;
-}
+/*place-self: align-self / justify-self alinean elementos hijos y tienen como valores start, center, end, stretch*/
