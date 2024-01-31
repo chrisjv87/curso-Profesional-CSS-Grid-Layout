@@ -1,10 +1,12 @@
 .container {
     display: grid;
     border: 1px solid black;
-    grid-template: repeat(5, 50px) / repeat(5, 50px);
+    grid-template: repeat(4, 50px) / repeat(4, 50px);
+    height: 100vh;
     gap: 20px;
-    place-items: center center;
-    /*place-items: align-items / justify-items y tiene valores como start, center, end, stretch. Sirve para colocar ambos valores en una sola linea*/
+    justify-content: center;
+    align-content: center;
+    /*Los valores son start, center, end, stretch*/
 }
   
 .item {
