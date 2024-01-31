@@ -3,12 +3,9 @@
     border: 1px solid black;
     grid-template: repeat(5, 50px) / repeat(5, 50px);
     gap: 20px;
-    grid-template-areas:
-    "header header header header nav"
-    "article main main main nav"
-    "article main main main nav"
-    "article main main main nav"
-    "footer footer footer footer nav";
+    justify-items: center; /* inline axis (alineacion eje horizontal) */
+    align-items: center; /* block axis (alineacion eje vertical) */
+    /*justify-items/align-items alinea  lo que esta por dentro de la grid y tiene valores como start, center, end, stretch*/
 }
   
 .item {
