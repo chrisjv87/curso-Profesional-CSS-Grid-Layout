@@ -1,13 +1,13 @@
 .container {
     display: grid;
     border: 1px solid black;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    /*auto-fit funciona de manera similar a auto-fill, pero en lugar de mostrar filas o columnas vacías cuando no hay suficientes elementos, ajustará automáticamente el tamaño de las filas o columnas para utilizar todo el espacio disponible.*/
+    grid-template-columns: 200px fit-content(200px) 200px;
+    /*La función fit-content en CSS se utiliza para especificar el tamaño máximo para un elemento flexible, como un contenedor de cuadrícula o un elemento en un diseño de cuadrícula. fit-content permite que el elemento se ajuste a su contenido, pero con un límite máximo especificado.(No me funciono por lo cual no lo recomiendo al dia de hoy, en el ejemplo se puede ver como no se limita la columna)*/
     gap: 5px;
 }
   
 .item {
-    width: 100%;
+    max-width: 100%;
     height: 100px;
     background-color: lightblue;
 }
