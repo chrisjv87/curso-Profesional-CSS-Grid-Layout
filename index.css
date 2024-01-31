@@ -1,13 +1,13 @@
 .container {
     display: grid;
     border: 1px solid black;
-    grid-template-columns: repeat(3, minmax(100px, 250px));
-    /*La función minmax(min, max) se utiliza para especificar un rango de tamaño para las columnas o filas en una cuadrícula. Donde min y max son los valores mínimo y máximo que quieres permitir para el tamaño de la columna o fila.*/
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    /*auto-fill intenta crear tantas filas o columnas como sea posible según el tamaño del contenedor. Si no hay suficientes elementos para llenar todas las filas o columnas, las que falten se mostrarán vacías. Si hay más elementos de los que caben, se adaptará y ajustará el tamaño de las filas o columnas para ajustarse al espacio disponible.*/
     gap: 5px;
 }
   
 .item {
-    width: auto;
+    width: 100%;
     height: 100px;
     background-color: lightblue;
 }
