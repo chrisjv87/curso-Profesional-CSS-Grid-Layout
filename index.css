@@ -4,10 +4,12 @@
     grid-template: repeat(4, 50px) / repeat(4, 50px);
     height: 100vh;
     gap: 20px;
-    /* justify-content: center; */
-    /* align-content: center; */
-    place-content: start center;
-    /* place-content: align-content justify-content; */
+    place-content: center center;
+    /*grid-auto-columns y grid-auto-rows sirven para poder indicar al contenedor que al recibir un elemento inesperado o de mas como en una API, que cree una columna o fila (track implicito) con un tamaño de celda especifico*/
+    grid-auto-columns: 50px;
+    grid-auto-rows: 50px;
+    /*grid-auto-flow: row/column sirve para indicar el orden en el que se van a gregar los nuevos elementos al track implicito, si en una nueva columna o fila*/
+    grid-auto-flow: column;
 }
   
 .item {
