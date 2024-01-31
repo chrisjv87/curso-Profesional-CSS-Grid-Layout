@@ -4,9 +4,10 @@
     grid-template: repeat(4, 50px) / repeat(4, 50px);
     height: 100vh;
     gap: 20px;
-    justify-content: center;
-    align-content: space-evenly;
-    /* Tambien existen otros valores para align-content como space-around, space-between, space-evnly */
+    /* justify-content: center; */
+    /* align-content: center; */
+    place-content: start center;
+    /* place-content: align-content justify-content; */
 }
   
 .item {
