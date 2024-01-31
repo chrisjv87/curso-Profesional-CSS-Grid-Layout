@@ -2,7 +2,7 @@
     display: grid;
     border: 1px solid black;
     grid-template: repeat(5, 50px) / repeat(5, 50px);
-    column-gap: 20px;
+    row-gap: 20px;
 }
   
 .item {
