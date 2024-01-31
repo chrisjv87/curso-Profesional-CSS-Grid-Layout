@@ -1,11 +1,8 @@
 .container {
     display: grid;
-    /* grid-template-columns: repeat(5, 50px); */
-    /* grid-template-rows: repeat(5, 50px); */
-    grid-template: repeat(5, 50px) / repeat(5, 50px);
-    /* grid-template: filas / columnas */
     border: 1px solid black;
-    gap: 20px;
+    grid-template: repeat(5, 50px) / repeat(5, 50px);
+    column-gap: 20px;
 }
   
 .item {
