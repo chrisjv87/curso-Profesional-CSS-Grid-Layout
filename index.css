@@ -17,3 +17,8 @@
 
     grid-column: 2 / 3;
 }
+
+.item2 {
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
