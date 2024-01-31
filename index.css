@@ -2,7 +2,8 @@
     display: grid;
     border: 1px solid black;
     grid-template: repeat(5, 50px) / repeat(5, 50px);
-    gap: 20px;
+    gap: 10px 20px;
+    /* gap: filas columnas; */
 }
   
 .item {
