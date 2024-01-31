@@ -1,8 +1,11 @@
 .container {
     display: grid;
     border: 1px solid black;
-    grid-template-columns: 200px 200px 200px;
+    grid-template-columns: repeat(3, 200px);
     gap: 5px;
+    grid-template-areas:
+    "seis cinco cuatro"
+    "uno dos tres";
 }
   
 .item {
@@ -12,15 +15,25 @@
 }
 
 .item1 {
-    /* grid-column-start: 2; */
-    /* grid-column-end: 3; */
-
-    grid-column: 2 / 3;
+    grid-area: uno;
 }
 
 .item2 {
-    /* grid-row-start: 1; */
-    /* grid-row-end: 1; */
+    grid-area: dos;
+}
 
-    grid-row: 1 / 1;
+.item3 {
+    grid-area: tres;
+}
+
+.item4 {
+    grid-area: cuatro;
+}
+
+.item5 {
+    grid-area: cinco;
+}
+
+.item6 {
+    grid-area: seis;
 }
