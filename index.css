@@ -1,8 +1,9 @@
 .container {
     display: grid;
-    grid-template-columns: repeat(5, 50px);
-    grid-template-rows: repeat(5, 50px);
-    /* grid-template: 50px 50px 50px 50px 50px / 50px 50px 50px 50px 50px; */
+    /* grid-template-columns: repeat(5, 50px); */
+    /* grid-template-rows: repeat(5, 50px); */
+    grid-template: repeat(5, 50px) / repeat(5, 50px);
+    /* grid-template: filas / columnas */
     border: 1px solid black;
     gap: 20px;
 }
