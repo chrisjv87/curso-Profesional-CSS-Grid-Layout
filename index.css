@@ -1,19 +1,13 @@
 .container {
     display: grid;
     border: 1px solid black;
-    grid-template: repeat(4, 50px) / repeat(4, 50px);
-    height: 100vh;
-    gap: 20px;
-    place-content: center center;
-    /*grid-auto-columns y grid-auto-rows sirven para poder indicar al contenedor que al recibir un elemento inesperado o de mas como en una API, que cree una columna o fila (track implicito) con un tamaño de celda especifico*/
-    grid-auto-columns: 50px;
-    grid-auto-rows: 50px;
-    /*grid-auto-flow: row/column sirve para indicar el orden en el que se van a gregar los nuevos elementos al track implicito, si en una nueva columna o fila*/
-    grid-auto-flow: column;
+    grid-template-columns: repeat(3, minmax(100px, 250px));
+    /*La función minmax(min, max) se utiliza para especificar un rango de tamaño para las columnas o filas en una cuadrícula. Donde min y max son los valores mínimo y máximo que quieres permitir para el tamaño de la columna o fila.*/
+    gap: 5px;
 }
   
 .item {
     width: auto;
-    height: auto;
+    height: 100px;
     background-color: lightblue;
 }
