@@ -1,0 +1,12 @@
+.container {
+    display: inline-grid;
+    grid-template: repeat(2, 200px) / repeat(2, 200px);
+    border: 1px solid black;
+    gap: 20px;
+}
+  
+.item {
+    width: auto;
+    height: auto;
+    background-color: lightblue;
+}
